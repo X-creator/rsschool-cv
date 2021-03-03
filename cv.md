@@ -12,6 +12,23 @@
 * ### _Backend_
     * Express, MongoDB (Beginner)
 
+# Code examples
+
+```javascript
+if (closingB.includes(sequenceB[0]) && !openingB.includes(sequenceB[0])) return false;
+
+for (let i = 0; i < sequenceB.length; i++) {
+    let brace = sequenceB[i];
+
+    if (closingB.includes(brace) && brackets[brace].length) {
+        let el = brackets[brace].pop();
+        if ((i - el) % 2 === 0) return false;
+    } else {
+        brackets[brace].push(i);
+    }
+}
+```
+
 ## English
 
 ### _Pre-Intermediate_
