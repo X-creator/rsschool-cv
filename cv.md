@@ -2,7 +2,7 @@
 
 ## Contacts
 
-### ![telegram]() ___ [_@hu_manitas_](https://t.me/hu_manitas)
+### ![telegram](https://github.com/X-creator/rsschool-cv/raw/gh-pages/img/telegram_icon.svg) ___ [_@hu_manitas_](https://t.me/hu_manitas)
 
 ## Skills
 
@@ -35,4 +35,4 @@ for (let i = 0; i < sequenceB.length; i++) {
 
 ## Personal goals
 
-### _I want to buy a grand piano_  ![grand piano]()
+### _I want to buy a grand piano_  ![grand piano](https://github.com/X-creator/rsschool-cv/raw/gh-pages/img/grand_piano.svg)
