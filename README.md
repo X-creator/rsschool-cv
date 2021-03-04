@@ -1,1 +1,1 @@
-# [Curriculum vitae](https://x-creator.github.io/rsschool-cv/cv)
+# [Curriculum vitae ](https://x-creator.github.io/rsschool-cv/cv)
