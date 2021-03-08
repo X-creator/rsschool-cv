@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Special+Elite&display=swap"
+          rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #99bbad;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        main, aside {
+            padding: 50px 20px;
+        }
+
+        main {
+            font-family: 'Special Elite', cursive;
+            width: 70%;
+        }
+
+        aside {
+            font-family: 'Merienda', cursive;
+            width: 30%;
+            background-color: #c8c6a7;
+            text-align: center;
+        }
+
+        @media (max-width: 910px) {
+            aside {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                width: 100%;
+            }
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        pre {
+            border-radius: 20px;
+            padding: 0 10px;
+            background-color: #f5f5dc47;
+            white-space: pre-wrap;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            background-color: #d4e2d4;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            min-height: 100vh;
+            margin: 0 auto;
+            max-width: 1200px;
+            min-width: 320px;
+        }
+
+        .about ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .goals p {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <main>
+        <h1>Nematov Khurshid</h1>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>
+                    <h3><em>Frontend</em></h3>
+                    <ul>
+                        <li>HTML, CSS, JS</li>
+                        <li>React, Redux (Beginner)</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><em>Backend</em></h3>
+                    <ul>
+                        <li>Express, MongoDB (Beginner)</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Code examples</h2>
+            <pre>
+                <em>
+                <code>
+    if (closingB.includes(sequenceB[0]) &amp;&amp; !openingB.includes(sequenceB[0])) return false;
+
+    for (let i = 0; i &lt; sequenceB.length; i++) {
+        let brace = sequenceB[i];
+
+        if (closingB.includes(brace) &amp;&amp; brackets[brace].length) {
+            let el = brackets[brace].pop();
+            if ((i - el) % 2 === 0) return false;
+        } else {
+            brackets[brace].push(i);
+        }
+    }</code>
+            </em>
+            </pre>
+        </section>
+        <section>
+            <h2>English</h2>
+            <p>Pre-Intermediate</p>
+        </section>
+
+    </main>
+    <aside>
+        <header>
+            <img src="img/owl_icon.svg" alt="avatar">
+        </header>
+        <section class="about">
+            <h2>About me</h2>
+            <ul>
+                <li>a thirst for knowledge</li>
+                <li>problem solving</li>
+                <li>creativity</li>
+            </ul>
+        </section>
+        <section class="contacts">
+            <h2>Contacts</h2>
+            <p>
+                <img src="img/telegram_icon.svg" alt="telegram"> ___ <a href="https://t.me/hu_manitas"
+                                                                        target="_blank"><em>@hu_manitas</em></a>
+            </p>
+        </section>
+        <section class="goals">
+            <h2>Personal goals</h2>
+            <p>
+                <img src="img/grand_piano.svg" alt="grand piano"> <em>I want to buy <br> a grand
+                piano</em>
+            </p>
+        </section>
+    </aside>
+</div>
+</body>
+</html>
