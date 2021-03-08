@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Special+Elite&display=swap"
+          rel="stylesheet">
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             background-color: #99bbad;
@@ -18,7 +25,14 @@
             padding: 50px 20px;
         }
 
+        main {
+            font-family: 'Special Elite', cursive;
+            width: 70%;
+        }
+
         aside {
+            font-family: 'Merienda', cursive;
+            width: 30%;
             background-color: #c8c6a7;
             text-align: center;
         }
@@ -37,6 +51,9 @@
         }
 
         pre {
+            border-radius: 20px;
+            padding: 0 10px;
+            background-color: #f5f5dc47;
             white-space: pre-wrap;
         }
 
@@ -55,14 +72,14 @@
             min-width: 320px;
         }
 
-        .avatar {
-            border: 3px solid #e4dad1;
-            border-radius: 50%;
-            max-width: 100px;
+        .about ul {
+            padding: 0;
+            list-style: none;
         }
 
-        .piano {
-            float: left;
+        .goals p {
+            display: flex;
+            justify-content: space-evenly;
         }
     </style>
 </head>
@@ -91,20 +108,21 @@
         <section>
             <h2>Code examples</h2>
             <pre>
+                <em>
                 <code>
-    if (closingB.includes(sequenceB[0]) && !openingB.includes(sequenceB[0])) return false;
+    if (closingB.includes(sequenceB[0]) &amp;&amp; !openingB.includes(sequenceB[0])) return false;
 
-    for (let i = 0; i < sequenceB.length; i++) {
+    for (let i = 0; i &lt; sequenceB.length; i++) {
         let brace = sequenceB[i];
 
-        if (closingB.includes(brace) && brackets[brace].length) {
+        if (closingB.includes(brace) &amp;&amp; brackets[brace].length) {
             let el = brackets[brace].pop();
             if ((i - el) % 2 === 0) return false;
         } else {
             brackets[brace].push(i);
         }
-    }
-                </code>
+    }</code>
+            </em>
             </pre>
         </section>
         <section>
@@ -115,17 +133,28 @@
     </main>
     <aside>
         <header>
-            <img class="avatar" src="img/owl_icon.svg" alt="avatar">
+            <img src="img/owl_icon.svg" alt="avatar">
         </header>
-        <section>
+        <section class="about">
+            <h2>About me</h2>
+            <ul>
+                <li>a thirst for knowledge</li>
+                <li>problem solving</li>
+                <li>creativity</li>
+            </ul>
+        </section>
+        <section class="contacts">
             <h2>Contacts</h2>
-            <p><img src="img/telegram_icon.svg" alt="telegram"> ___ <a href="https://t.me/hu_manitas"
-                                                                       target="_blank"><em>@hu_manitas</em></a>
+            <p>
+                <img src="img/telegram_icon.svg" alt="telegram"> ___ <a href="https://t.me/hu_manitas"
+                                                                        target="_blank"><em>@hu_manitas</em></a>
             </p>
         </section>
-        <section>
+        <section class="goals">
             <h2>Personal goals</h2>
-            <p><img class="piano" src="img/grand_piano.svg" alt="grand piano"> <em>I want to buy <br> a grand piano</em>
+            <p>
+                <img src="img/grand_piano.svg" alt="grand piano"> <em>I want to buy <br> a grand
+                piano</em>
             </p>
         </section>
     </aside>
